@@ -1,3 +1,15 @@
+h1 {
+    font-size: xx-large;
+}
+
+h2 {
+    font-size: x-large;
+}
+
+p {
+    font-size: large;
+}
+
 body {
     --background-1: #46352a;
     --background-2: #3d2c21;
@@ -17,31 +29,46 @@ body {
     color: var(--text-1);
 
     font-family: monospace;
+    overflow-x: hidden;
 }
 
 .renovationText {
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%,-100%);
     filter: drop-shadow(0px 0px 5px #e7cab7);
     pointer-events: none;
+    text-align: center;
+}
+
+.coolText {
+    margin: 8px;
 }
 
 img {
     filter: invert(100%) invert(95%) sepia(8%) saturate(1542%) hue-rotate(311deg) brightness(92%) contrast(97%) drop-shadow(0px 0px 5px #e7cab7);
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%,10%);
     pointer-events: none;
+
+    width: 15%;
+    margin: 16px;
 }
 
 canvas {
-    position: absolute;
+    position: sticky;
     margin: 0px;
     padding: 0px;
     top: 0px;
     left: 0px;
     z-index: -1;
+}
+
+.mainContainer {
+    padding-left:10%; 
+    padding-right: 10%; 
+    position: absolute; 
+    top:10%; 
+    left:50%; 
+    width: 40%; 
+    transform: translate(-50%,0%); 
+    background-color: var(--background-1);
+
+    border-style: solid;
+    border-radius: 16px;
 }
